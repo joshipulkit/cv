@@ -1,21 +1,18 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% "ModernCV" CV and Cover Letter
+% Long Professional Curriculum Vitae
 % LaTeX Template
 % Version 1.1 (9/12/12)
 %
 % This template has been downloaded from:
-% http://www.LaTeXTemplates.com
+% http://www.latextemplates.com
 %
 % Original author:
-% Xavier Danaux (xdanaux@gmail.com)
-%
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% Rensselaer Polytechnic Institute (http://www.rpi.edu/dept/arc/training/latex/resumes/)
 %
 % Important note:
-% This template requires the moderncv.cls and .sty files to be in the same 
-% directory as this .tex file. These files provide the resume style and themes 
-% used for structuring the document.
+% This template requires the res.cls file to be in the same directory as the
+% .tex file. The res.cls file provides the resume style used for structuring the
+% document.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -23,293 +20,194 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
-\usepackage{standalone}
-\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\documentclass[10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
 
-\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{mathptmx} % Default font is the helvetica postscript font
+%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
 
-\usepackage[scale=0.85]{geometry} % Reduce document margins
-%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
-%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
-
-%\usepackage[utf8]{inputenc}
-
-%\usepackage{booktabs}
-\usepackage{fontawesome}
-\usepackage{marvosym} % For cool symbols.
-%\usepackage{hyperref}
-
-
-
-%----------------------------------------------------------------------------------------
-%	NAME AND CONTACT INFORMATION SECTION
-%----------------------------------------------------------------------------------------
-
-\firstname{PRATIK} % Your first name
-\familyname{DUTTA} % Your last name
-
-% All information in this block is optional, comment out any lines you don't need
-\title{Curriculum Vitae}
-\address{Department of CSE}{Indian Institute of Technology xyz}
-\mobile{(+91) 0000000, (+91) 0000000}
-
-
-%\fax{(000) 111 1113}
- 
-%\social{github}{stefano-bragaglia}
-\email{pratikabc@gmail.com} 
-
-
-
-\homepage{www.xyz.com/}{My Webpage}
-
-% social link \faGithub, \faSkype, \faLinkedin,\faStackExchange, and \faStackOverflow
-\extrainfo{
-    \faGithub\href{https://github.com/xyz}{ Github} \quad
-    \faLinkedin\href{https://www.linkedin.com/abc/}{ Linkedin} \quad
-    \faSkype\href{https://skype.com/abc}{Skype}
-    }
-
-
-
-%\social[linkedin][www.linkedin.com]{name}
-% The first argument is %the url for the clickable link, the second argument is the url displayed in the %template - this allows special characters to be displayed such as the tilde in this %example
-
-\photo[70pt][0.3pt]{picture} % The first bracket is the picture height, the second is %the thickness of the frame around the picture (0pt for no frame)
-%\quote{Not Attention, Patience is all we need.}
-
-%----------------------------------------------------------------------------------------
-
-\newcommand{\cvdoublecolumn}[2]{%
-  \cvitem[.75em]{}{%
-    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#1\end{minipage}%
-    \hfill%
-    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#2\end{minipage}%
-    }%
-}
-
-
-
-\usepackage{multibbl}
-\newcommand\Colorhref[3][orange]{\href{#2}{\small\color{#1}#3}}
-
-
-% \newcommand{\cvreference}[7]{%
-%     \textbf{#1}\newline% Name
-%     \ifthenelse{\equal{#2}{}}{}{\addresssymbol~#2\newline}%
-%     \ifthenelse{\equal{#3}{}}{}{#3\newline}%
-%     \ifthenelse{\equal{#4}{}}{}{#4\newline}%
-%     \ifthenelse{\equal{#5}{}}{}{#5\newline}%
-%     \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\texttt{#6}\newline}%
-%     \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}}
+\newsectionwidth{0pt} % Stops section indenting
 
 \begin{document}
 
-\makecvtitle % Print the CV title
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND ADDRESS(ES) SECTION
+%----------------------------------------------------------------------------------------
 
+\name{Pulkit Joshi\\ \\} % Your name at the top
 
+% If you don't want one of the addresses, simply remove all the text in the first or second \address{} bracket
 
+\address{{\bf Present Address} \\ D-225, Tata Institute of Fundamental Research \\ Colaba, Mumbai 400005 \\ Maharashtra, India. \\ +91-75032-60707} % Your address 1
+
+\address{{\bf Contact Information} \\ pulkitjoshi896@gmail.com \\ https://joshipulkit.github.io/ \\ } % Your address 2
+
+%----------------------------------------------------------------------------------------
+
+\begin{resume}
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\centerline{OBJECTIVE}}
+
+\vspace{8pt} % Gap between title and text
+
+    Theoretical and computational chemist seeking postdoctoral positions.\\ 
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Education}
+\section{\centerline{EDUCATION}} 
 
-\cventry{2016--present}{PhD, Computer Science \& Engineering}{Indian Institute of Technology}{Patna}{}
-{Protein-protein interactions, Protein structure, Genomic sequence, Multi-objective Optimization, Clustering, Machine Learning and Deep Learning}  % Arguments not required can be left empty
+\vspace{8pt} % Gap between title and text
 
-\cventry{2013--2015 :}{Master of Engineering, Information Technology}{Indian Institute of Engineering Science \& Technology}{Shibpur(\textit{Formerly} Bengal Engineering and Science University, Shibpur)}{}{}
-%{Advanced exposure to various areas of computer science along with a one and half year research project on Reversible Logic Synthesis.}
-%\cvitem{CGPA :}{7.96/10}
-\cventry{2009--2013 :}{Bachelor of Engineering, Computer Science \& Technology}{Indian Institute of Engineering Science \& Technology}{Shibpur(\textit{Formerly} Bengal Engineering and Science University, Shibpur)}{}{}
-%{Comprehensive exposure to the core areas of Computer Science along with a final year project on Data-mining}
-%\cvitem{CGPA :}{7.36/10}
-% \cventry{2008 :}{Higher Secondary Examination}{Belmuri Union Institution}{Belmuri}{}{ Mathematics, Physics, Chemistry, Biology, English, Bengali}
-% {}
-% \cvitem{Percentage :}{81.2 \%}
-% \cventry{2006 :}{Secondary Examination}{Belmuri Union Institution}{Belmuri}{}{ Mathematics, Physical Science, Life Science, Geography, History, English, Bengali}
-% {}
-% \cvitem{Percentage :}{90.8 \%}
+{\sl Doctor of Philosophy}, 
+Chemical Sciences \\ 
+Tata Institute of Fundamental Research, Mumbai, India \hfill July 2018 -- present \\ 
+THESIS: Long-range correlation effects in open-shell systems and temporary anions. \\ 
+ 
+{\sl Master of Science}, Chemistry (Specialization: Physical Chemistry) \\ 
+University of Delhi, Delhi, India \hfill July 2016 -- May 2018 \\
+PROJECT: Enhancement of light harvesting property of ubiquitous porphyrin-based metal-organic frameworks by employing quantum dots.\\
+GRADE: 77.90\% \\
 
-
-
-
+{\sl Bachelor of Science}, Chemistry \\ 
+St. Stephen's College, University of Delhi, Delhi, India \hfill July 2013 -- May 2016 \\
+GRADE: 87.63\% \\
 
 %----------------------------------------------------------------------------------------
-%	PUBLICATION SECTION
-%----------------------------------------------------------------------------------------
-
-
-\section{Publications}
-% \subsection{Journal Article(Accepted)}
-% \cventry{2019}{\textbf{Pratik Dutta}, Sriparna Saha, Sanket Pai and Aviral Kumar}{}{Protein-protein Interaction based Generative Model for Improving Gene Clustering}{In \textit{\textbf{Scientific Reports-Nature}} (\textbf{Impact Factor: 4.12)}}{}
-
-\subsection{Journal Articles}
-\newbibliography{journal}
-\bibliographystyle{journal}{plainyrrev}
-\nocite{journal}{*}
-\bibliography{journal}{journal}
-{\large \textsc{Refereed Journal Articles}}
-\subsection{Communicated Journal Article}
-\cventry{2020}{Pratik Dutta, Aditya Prakash Patra, and Sriparna Saha}{}{DeePROG: An Attention based Deep Multi-modal Architecture for Disease Gene Prognosis}{In \textit{IEEE Transactions on Biomedical Engineering}}{}
-
-
-\subsection{In Conference Proceedings}
-\newbibliography{conference}
-\nocite{conference}{*}
-\bibliographystyle{conference}{plainyrrev}
-\bibliography{conference}{conference}
-{\large \textsc{Refereed Conference Publications}}
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
+\vspace{0.2in} % Some whitespace between sections
 
 %----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
+%	PROFESSIONAL EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Research Experience}
-\subsection{Indian Institute of Technology, ABC}
-\cventry{June,2019 -- present}{\textit{Identifying Protein-protein Interaction from Biomedical text}}{}{}{}
-{Developing a deep multi-modal architecture for accurately predicting protein interaction information from biomedical text. 
-}
-\cvitem{Advisor :}{\textbf{Dr. abc xyz}, \textit{Associate Professor, Department of Computer Science \& Engineering}, IIT abc ({\Colorhref{https://www.personal_webpage.com/} {\textit{Personal Web-page}}})}
+\section{\centerline{PROFESSIONAL EXPERIENCE}} 
 
-\cventry{July,2018 -- present}{\textit{Developing Deep Multi-modal Architecture for Biomedical Problems}}{}{}{}
-{Analyzing different modalities of genes like gene expression profiles, protein 3D structure, underlying amino acid sequence using popular deep learning models to obtain deeper insight into the underlying biological system. 
-}
-\cvitem{Advisor :}{\textbf{Dr. abc xyz}, \textit{Associate Professor, Department of Computer Science \& Engineering}, IIT abc ({\Colorhref{https://www.personal_webpage.com/} {\textit{Personal Web-page}}})}
+\vspace{8pt} % Gap between title and text
 
+{\sl International Business Machines} \hfill January -- August 1990 \\
+General Products Division, Tucson, AZ \hfill (Co-op Assignment)
+\begin{itemize} \itemsep -2pt % Reduce space between items
+\item Developed new selection criteria for applicant screening and selection at GPD Tucson. Conducted job analysis, wrote criteria, identified skill codes for applicant tracking, established rater reliability. 
+\item Interviewed applicants for positions in Assembly, Warehousing, and Direct Customer Response. 
+\item Assistant Co-op Coordinator. Initiated and maintained computer tracking for Co-op program. Organized all co-op seminars and activities, co-op directory. 
+\item Representative on GPD Compensation Task Force. Prepared job descriptions, assigned corporate position code, and submitted for division approval. 
+\end{itemize}
 
+{\sl Rensselaer Polytechnic Institute, Troy, NY} \\[2pt]
+Professional Leadership Program, School of Management \hfill October 1988 -- March 1989 
+\begin{itemize} \itemsep -2pt % Reduce space between items
+\item Developed standardized interview to identify early management potential. Generated leadership dimensions and applicant assessment scale. 
+\item Completed 30 hours of interviewer training. Interviewed 75 candidates. 
+\end{itemize} 
+\vspace{-6pt} % Reduce space between positions at the same organization
+Department of Psychology \hfill May -- December 1989 
+\begin{itemize} 
+\item Trained engineering students in the development of interpersonal skills. Facilitated group interaction, provided individual feedback via application analysis papers. 
+\end{itemize}
+ 
+{\sl New York State Department of Mental Health} \hfill September -- December 1989 \\
+Bureau of Management and Program Evaluation, Albany, NY 
+\begin{itemize}
+\item Conducted research to identify key evaluation factors in the statewide investigation of Intensive Care Facilities for disabled persons.
+\end{itemize}
 
-
-\subsection{Indian Institute of Technology, XYZ}
-\cventry{January,2015 -- Dec,2015}{\textit{Design and Synthesis of Reversible Multi-dimentional Nearest-Neighbour(NN) Quantum Circuit}}{}{}{}{Proposed an approach for designing and physically implementing of the multi-dimensional quantum circuits maintaining nearest-neighbor complacency that use minimal number of SWAP gates.}
-\cvitem{Advisor :}{\textbf{Dr. abc xyz}, \textit{Associate Professor, Department of Computer Science \& Engineering}, IIT abc ({\Colorhref{https://www.personal_webpage.com/} {\textit{Personal Web-page}}})}
-
-
-\cventry{2012 -- 2013}{\textit{Text Document Clustering with Semantic Similarity through Wordnet}}{}{}{}{Improvement of the text document clustering task over conventional methods by introducing WORDNET and some better clustering algorithms.}
-\cvitem{Advisor :}{\textbf{Dr. abc xyz}, \textit{Associate Professor, Department of Computer Science \& Engineering}, IIT abc ({\Colorhref{https://www.personal_webpage.com/} {\textit{Personal Web-page}}})}
-
-
-
-
-
-
-
-
-
-
-
-%----------------------------------------------------------------------------------------
-%	Fellowships \& Awards
-%----------------------------------------------------------------------------------------
-
-\section{Fellowships \& Awards}
-
-\cvitem{2016 --present}{\textit{\textbf{Visvesvaraya Fellowship}} of Ministry of Electronics and Information Technology (MeitY), Government of India, as a PhD research scholar in Indian Institute of Technology Patna.}
-\cvitem{2019}{Receipt of \textit{\textbf{Visvesvaraya Travel Grant}} to attend a international conference \textbf{\textit{IEEE Congress on Evolutionary Computation, 2019}} in Wellington, New Zealand.}
-\cvitem{2018}{Recipient of \textit{\textbf{SciGenome Research Foundation (SGRF) GYAN Scholarship}} to participate \textbf{\textit{Nextgen Genomics, Biology, Bioinformatics and Technologies-2018}} meeting at Jaipur India from $30^{th}$ September to $2^{nd}$ October 2018. }
-\cvitem{2015}{Awarded under \textit{\textbf{Students Reward Programme}} at the Annual General Meeting of \textbf{Global Alumni Association of Bengal Engineering and Science University(GAABESU).}}
-
+{\sl Colonie Center Shopping Mall} \hfill January -- June 1989 \\ Albany, NY 
+\begin{itemize} \itemsep -2pt % Reduce space between items
+\item Served as consultant for new management team in techniques for managing change. 
+\item Developed and administered organizational climate survey. 
+\item Facilitated management-employee feedback sessions. 
+\end{itemize}
 
 %----------------------------------------------------------------------------------------
-%	Academic achievements
-%----------------------------------------------------------------------------------------
 
-\section{Academic Achievements \& Recognitions }
-
-
-\cvitem{2018}{\textbf{Session Chair of the session "Prediction"} in \textbf{$25^{th}$ \textit{International Conference of Neural Information Processing} (ICONIP 2018)}, Siem Reap, Cambodia.}
-
-
-\cvitem{2018}{Invited to conduct lab sessions in \textit{\textbf{"Training Program on Machine Learning For Ocean Acoustics and Climate Data Analysis"}}, during 22-36 October 2018 at \textbf{Defence R\&D Organization- Naval Physical \& Oceanographic Laboratory (DRDO-NPOL), Kochi, Kerala}.}
-
-
-
+\vspace{0.2in} % Some whitespace between sections
 
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Computer skills}
+\section{\centerline{COMPUTER SKILLS}}
 
-\cvitem{Programming Languages}{Python, PyTorch, keras, R, C, C++, Advanced JAVA}
-\cvitem{Web Technologies}{HTML 5, PHP, JSP, Javascript}
-\cvitem{Database}{SQL, MySQL, Apache, Neo4j}
+\vspace{8pt} % Gap between title and text
 
-
-%----------------------------------------------------------------------------------------
-%	Position of Responsibility SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Position of Responsibility}
-\cventry{2016-2020}{Executive member of IEEE Student Branch}{}{IIT ABC}{}{}
-\cventry{April 1-5, 2019}{Organizer, GIAN Workshop on subjects}{}{IIT ABC}{}{}
-
-
-
+Experienced in SPSS, BMDP statistical packages; LOTUS 1-2-3, Personal Editor 
 
 %----------------------------------------------------------------------------------------
-%	Teaching Assistantship SECTION
+
+\vspace{0.2in} % Some whitespace between sections
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Teaching Assistantship}
-\cventry{Fall, 2019 :}{CS564: Foundations of Machine Learning}{}{IIT ABC}{}{}
-\cventry{Spring, 2019 :}{CS342: Operating System Lab}{}{IIT ABC}{}{}
-\cventry{Fall, 2018 :}{CS564: Foundations of Machine Learning}{}{IIT ABC}{}{}
+\section{\centerline{PUBLICATIONS}} 
 
+\vspace{15pt} % Gap between title and text
+\begin{itemize} \itemsep -2pt % Reduce space between items
+\item ``Job Analysis - A True Picture," Journal of Headhunters, Vol. 5, Number 3. Fall 1990 
+\item ``The Fine Tuning of Interpersonal Skills," Journal of Recruiting/Hiring, Vol. 16, Number 7, August 1990
+\end{itemize}
 
+%----------------------------------------------------------------------------------------
 
-\section{Referees}
+\vspace{0.2in} % Some whitespace between sections
 
+%----------------------------------------------------------------------------------------
+%	MEMBERSHIPS SECTION
+%----------------------------------------------------------------------------------------
 
-\begin{tabular}{lr}
-% Referee 1
-\begin{minipage}[t]{3in}
-\textbf{Dr. XXXXX XXXXX}\\
-\textit{Associate Professor, Department of} \\
-\textit{Computer Science \& Engineering}\\
-Institute name\\
-\Letter\ \href{mailto:abc@gmail.com}{abc@gmail.com}
-\end{minipage}
-&
-% Referee 2
-\begin{minipage}[t]{3in}
-\textbf{Dr. XXXXX XXXXX}\\
-\textit{Associate Professor, Department of} \\
-\textit{Computer Science \& Engineering}\\
-Institute name\\
-\Telefon\ +(601) 877-6236\\
-\Letter\ \href{mailto:abc@gmail.com}{abc@gmail.com}
-\end{minipage}
-\\
-\\ % Additional newline for spacing.
-% Referee 3
-\begin{minipage}[t]{3in}
-\textbf{Dr. XXXXX XXXXX}\\
-\textit{Associate Professor, Department of} \\
-\textit{Computer Science \& Engineering}\\
-Institute name\\
-\Telefon\ +(601) 877-6236\\
-\Letter\ \href{mailto:abc@gmail.com}{abc@gmail.com}
-\end{minipage}
-&
-\\
-\end{tabular}
+\section{\centerline{MEMBERSHIPS}} 
 
+\vspace{-5pt} % Reduce space between section title and contents
 
+\begin{center}
+American Psychological Association, Student Affiliate \\
+Vice President of Activities, RPI Weight-training Club \\ 
+Chairperson, Entertainment Committee, Utica College \\ 
+Latin-American Student Union, Utica College \\
+Member All-American Nautilus 
+\end{center}
+
+%----------------------------------------------------------------------------------------
+
+\vspace{0.2in} % Some whitespace between sections
+
+%----------------------------------------------------------------------------------------
+%	HONORS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\centerline{HONORS}} 
+
+\vspace{-5pt} % Reduce space between section title and contents
+
+\begin{center}
+Full tuition assistantship, Rensselaer Polytechnic Institute \\
+PSI CHI National Honor Society \\
+PHI THETA KAPPA National Honor Society 
+\end{center}
+
+%----------------------------------------------------------------------------------------
+
+\vspace{0.2in} % Some whitespace between sections
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\centerline{INTERESTS}} 
+
+\vspace{-5pt} % Reduce space between section title and contents
+
+\begin{center}
+Classical piano, jazz, bodybuilding/aerobic exercise, cooking, dancing
+\end{center} 
+
+%----------------------------------------------------------------------------------------
+
+\end{resume} 
 \end{document}
